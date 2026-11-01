@@ -1,0 +1,14 @@
+{
+    "data": {
+        "user": {
+            "avatar_url": "https://p19-sign.tiktokcdn-us.com/tos-useast5-avt-0068-tx/b17f0e4b3a4f4a50993cf72cda8b88b8~c5_168x168.jpeg",
+            "open_id": "-000OqnTqvyAs6PXm0P1Kpv_mZr0FbM4oQJT",
+            "display_name": "Kai am See"
+        }
+    },
+    "error": {
+        "code": "ok",
+        "message": "",
+        "log_id": "20220829194722CBE87ED59D524E727021"
+    }
+}

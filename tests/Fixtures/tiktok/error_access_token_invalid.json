@@ -1,0 +1,8 @@
+{
+    "data": {},
+    "error": {
+        "code": "access_token_invalid",
+        "message": "Anonymised TikTok error message for access_token_invalid.",
+        "log_id": "20261101120000ERRACCESS-T"
+    }
+}

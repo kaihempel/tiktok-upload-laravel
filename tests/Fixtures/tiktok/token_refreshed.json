@@ -1,0 +1,9 @@
+{
+    "access_token": "act.refreshed-access-token",
+    "expires_in": 86400,
+    "open_id": "open-id-123",
+    "refresh_expires_in": 31536000,
+    "refresh_token": "rft.rotated-refresh-token",
+    "scope": "user.info.basic,video.upload",
+    "token_type": "Bearer"
+}

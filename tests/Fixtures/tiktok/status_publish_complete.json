@@ -1,0 +1,12 @@
+{
+    "data": {
+        "status": "PUBLISH_COMPLETE",
+        "uploaded_bytes": 10000,
+        "publicaly_available_post_id": [7291234567890123456]
+    },
+    "error": {
+        "code": "ok",
+        "message": "",
+        "log_id": "202210112248442CB9319E1FB30C1073F6"
+    }
+}

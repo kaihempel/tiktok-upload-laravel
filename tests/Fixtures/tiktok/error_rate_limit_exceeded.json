@@ -1,0 +1,8 @@
+{
+    "data": {},
+    "error": {
+        "code": "rate_limit_exceeded",
+        "message": "Anonymised TikTok error message for rate_limit_exceeded.",
+        "log_id": "20261101120000ERRRATE-LIM"
+    }
+}
