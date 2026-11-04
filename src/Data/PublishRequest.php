@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Kuweh\TikTokUpload\Data;
+namespace KaiHempel\TikTokUpload\Data;
 
-use Kuweh\TikTokUpload\Media\PhotoSet;
-use Kuweh\TikTokUpload\Media\VideoFile;
+use KaiHempel\TikTokUpload\Media\PhotoSet;
+use KaiHempel\TikTokUpload\Media\VideoFile;
 
 final readonly class PublishRequest
 {

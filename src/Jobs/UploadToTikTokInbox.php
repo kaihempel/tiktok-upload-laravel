@@ -2,22 +2,22 @@
 
 declare(strict_types=1);
 
-namespace Kuweh\TikTokUpload\Jobs;
+namespace KaiHempel\TikTokUpload\Jobs;
 
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Bus\Dispatchable;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Support\Facades\Config;
-use Kuweh\TikTokUpload\Contracts\HasTikTokAccount;
-use Kuweh\TikTokUpload\Events\TikTokUploadFailed;
-use Kuweh\TikTokUpload\Exceptions\RateLimitException;
-use Kuweh\TikTokUpload\Exceptions\TikTokException;
-use Kuweh\TikTokUpload\Exceptions\UploadFailedException;
-use Kuweh\TikTokUpload\Jobs\Middleware\RateLimitedPerTikTokAccount;
-use Kuweh\TikTokUpload\Media\PhotoSet;
-use Kuweh\TikTokUpload\Media\VideoFile;
-use Kuweh\TikTokUpload\TikTokManager;
+use KaiHempel\TikTokUpload\Contracts\HasTikTokAccount;
+use KaiHempel\TikTokUpload\Events\TikTokUploadFailed;
+use KaiHempel\TikTokUpload\Exceptions\RateLimitException;
+use KaiHempel\TikTokUpload\Exceptions\TikTokException;
+use KaiHempel\TikTokUpload\Exceptions\UploadFailedException;
+use KaiHempel\TikTokUpload\Jobs\Middleware\RateLimitedPerTikTokAccount;
+use KaiHempel\TikTokUpload\Media\PhotoSet;
+use KaiHempel\TikTokUpload\Media\VideoFile;
+use KaiHempel\TikTokUpload\TikTokManager;
 use Throwable;
 
 /**

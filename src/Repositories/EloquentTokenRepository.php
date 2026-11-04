@@ -2,16 +2,16 @@
 
 declare(strict_types=1);
 
-namespace Kuweh\TikTokUpload\Repositories;
+namespace KaiHempel\TikTokUpload\Repositories;
 
 use DateTimeInterface;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
-use Kuweh\TikTokUpload\Contracts\TokenRepository;
-use Kuweh\TikTokUpload\Data\TikTokAccountData;
-use Kuweh\TikTokUpload\Data\UserProfile;
-use Kuweh\TikTokUpload\Models\TikTokAccount;
-use Kuweh\TikTokUpload\OAuth\AccessToken;
+use KaiHempel\TikTokUpload\Contracts\TokenRepository;
+use KaiHempel\TikTokUpload\Data\TikTokAccountData;
+use KaiHempel\TikTokUpload\Data\UserProfile;
+use KaiHempel\TikTokUpload\Models\TikTokAccount;
+use KaiHempel\TikTokUpload\OAuth\AccessToken;
 
 class EloquentTokenRepository implements TokenRepository
 {

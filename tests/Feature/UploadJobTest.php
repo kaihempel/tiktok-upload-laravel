@@ -6,15 +6,15 @@ use Illuminate\Support\Facades\Event;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Queue;
 use Illuminate\Support\Facades\Storage;
-use Kuweh\TikTokUpload\Events\TikTokUploadFailed;
-use Kuweh\TikTokUpload\Events\TikTokUploadInitiated;
-use Kuweh\TikTokUpload\Exceptions\ServerException;
-use Kuweh\TikTokUpload\Jobs\Middleware\RateLimitedPerTikTokAccount;
-use Kuweh\TikTokUpload\Jobs\PollTikTokPublishStatus;
-use Kuweh\TikTokUpload\Jobs\UploadToTikTokInbox;
-use Kuweh\TikTokUpload\Media\PhotoSet;
-use Kuweh\TikTokUpload\Media\VideoFile;
-use Kuweh\TikTokUpload\TikTokManager;
+use KaiHempel\TikTokUpload\Events\TikTokUploadFailed;
+use KaiHempel\TikTokUpload\Events\TikTokUploadInitiated;
+use KaiHempel\TikTokUpload\Exceptions\ServerException;
+use KaiHempel\TikTokUpload\Jobs\Middleware\RateLimitedPerTikTokAccount;
+use KaiHempel\TikTokUpload\Jobs\PollTikTokPublishStatus;
+use KaiHempel\TikTokUpload\Jobs\UploadToTikTokInbox;
+use KaiHempel\TikTokUpload\Media\PhotoSet;
+use KaiHempel\TikTokUpload\Media\VideoFile;
+use KaiHempel\TikTokUpload\TikTokManager;
 
 beforeEach(function (): void {
     Storage::fake('local');

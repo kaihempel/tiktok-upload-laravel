@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Kuweh\TikTokUpload\Support;
+namespace KaiHempel\TikTokUpload\Support;
 
 final class Utf16
 {

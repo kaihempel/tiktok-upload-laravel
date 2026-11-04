@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Kuweh\TikTokUpload\Media\UrlProviders;
+namespace KaiHempel\TikTokUpload\Media\UrlProviders;
 
 use Illuminate\Contracts\Filesystem\Factory as FilesystemFactory;
 use Illuminate\Filesystem\FilesystemAdapter;
 use Illuminate\Support\Carbon;
-use Kuweh\TikTokUpload\Contracts\MediaUrlProvider;
+use KaiHempel\TikTokUpload\Contracts\MediaUrlProvider;
 use RuntimeException;
 
 /**

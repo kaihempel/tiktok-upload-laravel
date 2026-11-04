@@ -4,21 +4,21 @@ declare(strict_types=1);
 
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Storage;
-use Kuweh\TikTokUpload\Contracts\MediaUrlProvider;
-use Kuweh\TikTokUpload\Contracts\PlatformDriver;
-use Kuweh\TikTokUpload\Contracts\TokenRepository;
-use Kuweh\TikTokUpload\Data\PublishRequest;
-use Kuweh\TikTokUpload\Data\PublishState;
-use Kuweh\TikTokUpload\Drivers\TikTokDriver;
-use Kuweh\TikTokUpload\Facades\TikTok;
-use Kuweh\TikTokUpload\Media\MediaValidator;
-use Kuweh\TikTokUpload\Media\PhotoSet;
-use Kuweh\TikTokUpload\Media\UrlProviders\SignedRouteUrlProvider;
-use Kuweh\TikTokUpload\Media\VideoFile;
-use Kuweh\TikTokUpload\OAuth\OAuthService;
-use Kuweh\TikTokUpload\Repositories\EloquentTokenRepository;
-use Kuweh\TikTokUpload\TikTokAccountClient;
-use Kuweh\TikTokUpload\TikTokManager;
+use KaiHempel\TikTokUpload\Contracts\MediaUrlProvider;
+use KaiHempel\TikTokUpload\Contracts\PlatformDriver;
+use KaiHempel\TikTokUpload\Contracts\TokenRepository;
+use KaiHempel\TikTokUpload\Data\PublishRequest;
+use KaiHempel\TikTokUpload\Data\PublishState;
+use KaiHempel\TikTokUpload\Drivers\TikTokDriver;
+use KaiHempel\TikTokUpload\Facades\TikTok;
+use KaiHempel\TikTokUpload\Media\MediaValidator;
+use KaiHempel\TikTokUpload\Media\PhotoSet;
+use KaiHempel\TikTokUpload\Media\UrlProviders\SignedRouteUrlProvider;
+use KaiHempel\TikTokUpload\Media\VideoFile;
+use KaiHempel\TikTokUpload\OAuth\OAuthService;
+use KaiHempel\TikTokUpload\Repositories\EloquentTokenRepository;
+use KaiHempel\TikTokUpload\TikTokAccountClient;
+use KaiHempel\TikTokUpload\TikTokManager;
 
 it('resolves the package services', function (): void {
     expect(app(TokenRepository::class))->toBeInstanceOf(EloquentTokenRepository::class)

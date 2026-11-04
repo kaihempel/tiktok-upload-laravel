@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Kuweh\TikTokUpload\Contracts;
+namespace KaiHempel\TikTokUpload\Contracts;
 
-use Kuweh\TikTokUpload\Data\Capabilities;
-use Kuweh\TikTokUpload\Data\PublishRequest;
-use Kuweh\TikTokUpload\Data\PublishResult;
+use KaiHempel\TikTokUpload\Data\Capabilities;
+use KaiHempel\TikTokUpload\Data\PublishRequest;
+use KaiHempel\TikTokUpload\Data\PublishResult;
 
 /**
  * Common contract used by the social media manager for every platform.

@@ -5,11 +5,11 @@ declare(strict_types=1);
 use Illuminate\Http\Client\Request;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Support\Facades\Http;
-use Kuweh\TikTokUpload\Contracts\TokenRepository;
-use Kuweh\TikTokUpload\Events\TikTokAccountReauthorizationRequired;
-use Kuweh\TikTokUpload\Events\TikTokTokenRefreshed;
-use Kuweh\TikTokUpload\Exceptions\AuthenticationException;
-use Kuweh\TikTokUpload\Facades\TikTok;
+use KaiHempel\TikTokUpload\Contracts\TokenRepository;
+use KaiHempel\TikTokUpload\Events\TikTokAccountReauthorizationRequired;
+use KaiHempel\TikTokUpload\Events\TikTokTokenRefreshed;
+use KaiHempel\TikTokUpload\Exceptions\AuthenticationException;
+use KaiHempel\TikTokUpload\Facades\TikTok;
 
 beforeEach(function (): void {
     Event::fake([TikTokTokenRefreshed::class, TikTokAccountReauthorizationRequired::class]);

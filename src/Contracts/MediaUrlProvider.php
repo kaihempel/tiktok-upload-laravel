@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Kuweh\TikTokUpload\Contracts;
+namespace KaiHempel\TikTokUpload\Contracts;
 
 interface MediaUrlProvider
 {

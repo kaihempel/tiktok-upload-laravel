@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Kuweh\TikTokUpload\Data;
+namespace KaiHempel\TikTokUpload\Data;
 
-use Kuweh\TikTokUpload\Exceptions\UnexpectedResponseException;
+use KaiHempel\TikTokUpload\Exceptions\UnexpectedResponseException;
 
 enum PublishStatus: string
 {

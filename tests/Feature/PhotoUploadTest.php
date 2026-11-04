@@ -6,13 +6,13 @@ use Illuminate\Http\Client\Request;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Storage;
-use Kuweh\TikTokUpload\Data\MediaType;
-use Kuweh\TikTokUpload\Data\PublishStatus;
-use Kuweh\TikTokUpload\Events\TikTokUploadInitiated;
-use Kuweh\TikTokUpload\Exceptions\MediaValidationException;
-use Kuweh\TikTokUpload\Exceptions\UrlOwnershipUnverifiedException;
-use Kuweh\TikTokUpload\Facades\TikTok;
-use Kuweh\TikTokUpload\Media\PhotoSet;
+use KaiHempel\TikTokUpload\Data\MediaType;
+use KaiHempel\TikTokUpload\Data\PublishStatus;
+use KaiHempel\TikTokUpload\Events\TikTokUploadInitiated;
+use KaiHempel\TikTokUpload\Exceptions\MediaValidationException;
+use KaiHempel\TikTokUpload\Exceptions\UrlOwnershipUnverifiedException;
+use KaiHempel\TikTokUpload\Facades\TikTok;
+use KaiHempel\TikTokUpload\Media\PhotoSet;
 
 const PHOTO_INIT_URL = 'open.tiktokapis.com/v2/post/publish/content/init/';
 

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-use Kuweh\TikTokUpload\Support\Utf16;
+use KaiHempel\TikTokUpload\Support\Utf16;
 
 it('counts UTF-16 code units', function (string $value, int $expected): void {
     expect(Utf16::length($value))->toBe($expected);

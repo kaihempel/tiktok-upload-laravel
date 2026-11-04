@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Kuweh\TikTokUpload\Events;
+namespace KaiHempel\TikTokUpload\Events;
 
 use Illuminate\Foundation\Events\Dispatchable;
-use Kuweh\TikTokUpload\Data\MediaType;
+use KaiHempel\TikTokUpload\Data\MediaType;
 
 final class TikTokUploadInitiated
 {

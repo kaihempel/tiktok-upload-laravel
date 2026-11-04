@@ -6,13 +6,13 @@ use Illuminate\Http\Client\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Support\Facades\Http;
-use Kuweh\TikTokUpload\Contracts\TokenRepository;
-use Kuweh\TikTokUpload\Events\TikTokAccountConnected;
-use Kuweh\TikTokUpload\Events\TikTokAccountDisconnected;
-use Kuweh\TikTokUpload\Http\Controllers\OAuthController;
-use Kuweh\TikTokUpload\Models\TikTokAccount;
-use Kuweh\TikTokUpload\OAuth\Pkce;
-use Kuweh\TikTokUpload\TikTokManager;
+use KaiHempel\TikTokUpload\Contracts\TokenRepository;
+use KaiHempel\TikTokUpload\Events\TikTokAccountConnected;
+use KaiHempel\TikTokUpload\Events\TikTokAccountDisconnected;
+use KaiHempel\TikTokUpload\Http\Controllers\OAuthController;
+use KaiHempel\TikTokUpload\Models\TikTokAccount;
+use KaiHempel\TikTokUpload\OAuth\Pkce;
+use KaiHempel\TikTokUpload\TikTokManager;
 
 beforeEach(function (): void {
     Event::fake([TikTokAccountConnected::class, TikTokAccountDisconnected::class]);

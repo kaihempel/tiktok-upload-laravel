@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Kuweh\TikTokUpload\OAuth;
+namespace KaiHempel\TikTokUpload\OAuth;
 
 use Carbon\CarbonImmutable;
-use Kuweh\TikTokUpload\Exceptions\UnexpectedResponseException;
+use KaiHempel\TikTokUpload\Exceptions\UnexpectedResponseException;
 
 /**
  * Value object for a TikTok access/refresh token pair.

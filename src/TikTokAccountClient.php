@@ -2,24 +2,24 @@
 
 declare(strict_types=1);
 
-namespace Kuweh\TikTokUpload;
+namespace KaiHempel\TikTokUpload;
 
 use Illuminate\Contracts\Events\Dispatcher;
-use Kuweh\TikTokUpload\Contracts\MediaTransformer;
-use Kuweh\TikTokUpload\Data\StatusResult;
-use Kuweh\TikTokUpload\Data\TikTokAccountData;
-use Kuweh\TikTokUpload\Data\UploadResult;
-use Kuweh\TikTokUpload\Events\TikTokUploadInitiated;
-use Kuweh\TikTokUpload\Exceptions\PendingShareLimitReachedException;
-use Kuweh\TikTokUpload\Http\TikTokHttpClient;
-use Kuweh\TikTokUpload\Media\MediaValidator;
-use Kuweh\TikTokUpload\Media\PhotoSet;
-use Kuweh\TikTokUpload\Media\VideoFile;
-use Kuweh\TikTokUpload\OAuth\OAuthService;
-use Kuweh\TikTokUpload\Support\PendingShareTracker;
-use Kuweh\TikTokUpload\Upload\PhotoUploader;
-use Kuweh\TikTokUpload\Upload\StatusFetcher;
-use Kuweh\TikTokUpload\Upload\VideoUploader;
+use KaiHempel\TikTokUpload\Contracts\MediaTransformer;
+use KaiHempel\TikTokUpload\Data\StatusResult;
+use KaiHempel\TikTokUpload\Data\TikTokAccountData;
+use KaiHempel\TikTokUpload\Data\UploadResult;
+use KaiHempel\TikTokUpload\Events\TikTokUploadInitiated;
+use KaiHempel\TikTokUpload\Exceptions\PendingShareLimitReachedException;
+use KaiHempel\TikTokUpload\Http\TikTokHttpClient;
+use KaiHempel\TikTokUpload\Media\MediaValidator;
+use KaiHempel\TikTokUpload\Media\PhotoSet;
+use KaiHempel\TikTokUpload\Media\VideoFile;
+use KaiHempel\TikTokUpload\OAuth\OAuthService;
+use KaiHempel\TikTokUpload\Support\PendingShareTracker;
+use KaiHempel\TikTokUpload\Upload\PhotoUploader;
+use KaiHempel\TikTokUpload\Upload\StatusFetcher;
+use KaiHempel\TikTokUpload\Upload\VideoUploader;
 use Psr\Log\LoggerInterface;
 use Psr\Log\NullLogger;
 

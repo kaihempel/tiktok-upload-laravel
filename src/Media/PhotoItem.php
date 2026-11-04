@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Kuweh\TikTokUpload\Media;
+namespace KaiHempel\TikTokUpload\Media;
 
 use Illuminate\Support\Facades\Storage;
 

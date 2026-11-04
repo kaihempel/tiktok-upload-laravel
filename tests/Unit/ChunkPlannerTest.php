@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-use Kuweh\TikTokUpload\Upload\ChunkPlanner;
+use KaiHempel\TikTokUpload\Upload\ChunkPlanner;
 
 const MB = 1024 * 1024;
 

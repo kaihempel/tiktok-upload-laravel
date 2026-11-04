@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Kuweh\TikTokUpload\Media\UrlProviders;
+namespace KaiHempel\TikTokUpload\Media\UrlProviders;
 
 use Illuminate\Contracts\Cache\Repository as Cache;
 use Illuminate\Contracts\Encryption\DecryptException;
@@ -10,7 +10,7 @@ use Illuminate\Contracts\Encryption\StringEncrypter;
 use Illuminate\Contracts\Routing\UrlGenerator;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Str;
-use Kuweh\TikTokUpload\Contracts\RevocableMediaUrlProvider;
+use KaiHempel\TikTokUpload\Contracts\RevocableMediaUrlProvider;
 
 /**
  * Serves files through a temporarily signed route of this application

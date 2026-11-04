@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Kuweh\TikTokUpload\Data;
+namespace KaiHempel\TikTokUpload\Data;
 
 /**
  * Platform independent state used by the PlatformDriver contract.

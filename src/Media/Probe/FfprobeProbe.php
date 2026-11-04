@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace Kuweh\TikTokUpload\Media\Probe;
+namespace KaiHempel\TikTokUpload\Media\Probe;
 
 use Illuminate\Contracts\Filesystem\Factory as FilesystemFactory;
 use Illuminate\Filesystem\FilesystemAdapter;
 use Illuminate\Support\Facades\Process;
-use Kuweh\TikTokUpload\Contracts\MediaProbe;
-use Kuweh\TikTokUpload\Data\ProbeResult;
-use Kuweh\TikTokUpload\Exceptions\TikTokException;
+use KaiHempel\TikTokUpload\Contracts\MediaProbe;
+use KaiHempel\TikTokUpload\Data\ProbeResult;
+use KaiHempel\TikTokUpload\Exceptions\TikTokException;
 use League\Flysystem\Local\LocalFilesystemAdapter;
 
 /**

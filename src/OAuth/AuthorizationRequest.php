@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Kuweh\TikTokUpload\OAuth;
+namespace KaiHempel\TikTokUpload\OAuth;
 
 final readonly class AuthorizationRequest
 {

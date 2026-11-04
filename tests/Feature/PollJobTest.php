@@ -5,13 +5,13 @@ declare(strict_types=1);
 use Illuminate\Support\Facades\Event;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Queue;
-use Kuweh\TikTokUpload\Events\TikTokPostPublished;
-use Kuweh\TikTokUpload\Events\TikTokUploadFailed;
-use Kuweh\TikTokUpload\Events\TikTokUploadSentToInbox;
-use Kuweh\TikTokUpload\Events\TikTokUploadTimedOut;
-use Kuweh\TikTokUpload\Jobs\PollTikTokPublishStatus;
-use Kuweh\TikTokUpload\Media\UrlProviders\SignedRouteUrlProvider;
-use Kuweh\TikTokUpload\TikTokManager;
+use KaiHempel\TikTokUpload\Events\TikTokPostPublished;
+use KaiHempel\TikTokUpload\Events\TikTokUploadFailed;
+use KaiHempel\TikTokUpload\Events\TikTokUploadSentToInbox;
+use KaiHempel\TikTokUpload\Events\TikTokUploadTimedOut;
+use KaiHempel\TikTokUpload\Jobs\PollTikTokPublishStatus;
+use KaiHempel\TikTokUpload\Media\UrlProviders\SignedRouteUrlProvider;
+use KaiHempel\TikTokUpload\TikTokManager;
 
 const STATUS_URL = 'open.tiktokapis.com/v2/post/publish/status/fetch/';
 

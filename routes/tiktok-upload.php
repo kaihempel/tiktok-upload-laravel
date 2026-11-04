@@ -1,8 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use Kuweh\TikTokUpload\Http\Controllers\MediaController;
-use Kuweh\TikTokUpload\Http\Controllers\OAuthController;
+use KaiHempel\TikTokUpload\Http\Controllers\MediaController;
+use KaiHempel\TikTokUpload\Http\Controllers\OAuthController;
 
 $prefix = (string) config('tiktok-upload.routes.prefix', 'tiktok');
 

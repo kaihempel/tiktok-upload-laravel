@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 use Illuminate\Support\Facades\Process;
 use Illuminate\Support\Facades\Storage;
-use Kuweh\TikTokUpload\Exceptions\TikTokException;
-use Kuweh\TikTokUpload\Media\Probe\FfprobeProbe;
+use KaiHempel\TikTokUpload\Exceptions\TikTokException;
+use KaiHempel\TikTokUpload\Media\Probe\FfprobeProbe;
 
 it('parses ffprobe output', function (): void {
     $result = FfprobeProbe::parse(json_encode([

@@ -1,8 +1,8 @@
 <?php
 
-use Kuweh\TikTokUpload\Media\UrlProviders\SignedRouteUrlProvider;
-use Kuweh\TikTokUpload\Models\TikTokAccount;
-use Kuweh\TikTokUpload\Repositories\EloquentTokenRepository;
+use KaiHempel\TikTokUpload\Media\UrlProviders\SignedRouteUrlProvider;
+use KaiHempel\TikTokUpload\Models\TikTokAccount;
+use KaiHempel\TikTokUpload\Repositories\EloquentTokenRepository;
 
 return [
 
@@ -196,7 +196,7 @@ return [
         'timeout' => 60,
     ],
 
-    // Class implementing Kuweh\TikTokUpload\Contracts\MediaTransformer, e.g. to
+    // Class implementing KaiHempel\TikTokUpload\Contracts\MediaTransformer, e.g. to
     // transcode videos with ffmpeg or to convert PNG images to JPEG.
     'transformer' => null,
 

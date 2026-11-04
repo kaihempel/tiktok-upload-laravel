@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Kuweh\TikTokUpload;
+namespace KaiHempel\TikTokUpload;
 
 use Illuminate\Contracts\Cache\Factory as CacheFactory;
 use Illuminate\Contracts\Config\Repository as Config;
@@ -12,24 +12,24 @@ use Illuminate\Contracts\Filesystem\Factory as FilesystemFactory;
 use Illuminate\Http\Client\Factory as HttpFactory;
 use Illuminate\Log\LogManager;
 use Illuminate\Support\ServiceProvider;
-use Kuweh\TikTokUpload\Console\RefreshTikTokTokens;
-use Kuweh\TikTokUpload\Contracts\MediaProbe;
-use Kuweh\TikTokUpload\Contracts\MediaUrlProvider;
-use Kuweh\TikTokUpload\Contracts\TokenRepository;
-use Kuweh\TikTokUpload\Drivers\TikTokDriver;
-use Kuweh\TikTokUpload\Http\ApiTransport;
-use Kuweh\TikTokUpload\Http\TikTokHttpClient;
-use Kuweh\TikTokUpload\Media\MediaValidator;
-use Kuweh\TikTokUpload\Media\Probe\FfprobeProbe;
-use Kuweh\TikTokUpload\Media\UrlProviders\DiskUrlProvider;
-use Kuweh\TikTokUpload\Media\UrlProviders\SignedRouteUrlProvider;
-use Kuweh\TikTokUpload\OAuth\OAuthService;
-use Kuweh\TikTokUpload\Repositories\EloquentTokenRepository;
-use Kuweh\TikTokUpload\Support\PendingShareTracker;
-use Kuweh\TikTokUpload\Upload\ChunkPlanner;
-use Kuweh\TikTokUpload\Upload\PhotoUploader;
-use Kuweh\TikTokUpload\Upload\StatusFetcher;
-use Kuweh\TikTokUpload\Upload\VideoUploader;
+use KaiHempel\TikTokUpload\Console\RefreshTikTokTokens;
+use KaiHempel\TikTokUpload\Contracts\MediaProbe;
+use KaiHempel\TikTokUpload\Contracts\MediaUrlProvider;
+use KaiHempel\TikTokUpload\Contracts\TokenRepository;
+use KaiHempel\TikTokUpload\Drivers\TikTokDriver;
+use KaiHempel\TikTokUpload\Http\ApiTransport;
+use KaiHempel\TikTokUpload\Http\TikTokHttpClient;
+use KaiHempel\TikTokUpload\Media\MediaValidator;
+use KaiHempel\TikTokUpload\Media\Probe\FfprobeProbe;
+use KaiHempel\TikTokUpload\Media\UrlProviders\DiskUrlProvider;
+use KaiHempel\TikTokUpload\Media\UrlProviders\SignedRouteUrlProvider;
+use KaiHempel\TikTokUpload\OAuth\OAuthService;
+use KaiHempel\TikTokUpload\Repositories\EloquentTokenRepository;
+use KaiHempel\TikTokUpload\Support\PendingShareTracker;
+use KaiHempel\TikTokUpload\Upload\ChunkPlanner;
+use KaiHempel\TikTokUpload\Upload\PhotoUploader;
+use KaiHempel\TikTokUpload\Upload\StatusFetcher;
+use KaiHempel\TikTokUpload\Upload\VideoUploader;
 use Psr\Log\LoggerInterface;
 
 class TikTokUploadServiceProvider extends ServiceProvider

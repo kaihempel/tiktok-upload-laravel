@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Kuweh\TikTokUpload\Events;
+namespace KaiHempel\TikTokUpload\Events;
 
 use Illuminate\Foundation\Events\Dispatchable;
 

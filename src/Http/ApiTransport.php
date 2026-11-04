@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace Kuweh\TikTokUpload\Http;
+namespace KaiHempel\TikTokUpload\Http;
 
 use Illuminate\Http\Client\Factory as HttpFactory;
 use Illuminate\Http\Client\PendingRequest;
 use Illuminate\Http\Client\Response;
-use Kuweh\TikTokUpload\Exceptions\ErrorMapper;
-use Kuweh\TikTokUpload\Exceptions\TikTokException;
-use Kuweh\TikTokUpload\Exceptions\UnexpectedResponseException;
+use KaiHempel\TikTokUpload\Exceptions\ErrorMapper;
+use KaiHempel\TikTokUpload\Exceptions\TikTokException;
+use KaiHempel\TikTokUpload\Exceptions\UnexpectedResponseException;
 use Psr\Log\LoggerInterface;
 use Psr\Log\NullLogger;
 

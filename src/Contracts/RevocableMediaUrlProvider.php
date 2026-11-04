@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Kuweh\TikTokUpload\Contracts;
+namespace KaiHempel\TikTokUpload\Contracts;
 
 /**
  * A media URL provider whose URLs can be invalidated before they expire.

@@ -2,16 +2,16 @@
 
 declare(strict_types=1);
 
-namespace Kuweh\TikTokUpload\Upload;
+namespace KaiHempel\TikTokUpload\Upload;
 
-use Kuweh\TikTokUpload\Contracts\MediaUrlProvider;
-use Kuweh\TikTokUpload\Data\MediaType;
-use Kuweh\TikTokUpload\Data\PublishStatus;
-use Kuweh\TikTokUpload\Data\UploadResult;
-use Kuweh\TikTokUpload\Exceptions\UnexpectedResponseException;
-use Kuweh\TikTokUpload\Http\TikTokHttpClient;
-use Kuweh\TikTokUpload\Media\PhotoItem;
-use Kuweh\TikTokUpload\Media\PhotoSet;
+use KaiHempel\TikTokUpload\Contracts\MediaUrlProvider;
+use KaiHempel\TikTokUpload\Data\MediaType;
+use KaiHempel\TikTokUpload\Data\PublishStatus;
+use KaiHempel\TikTokUpload\Data\UploadResult;
+use KaiHempel\TikTokUpload\Exceptions\UnexpectedResponseException;
+use KaiHempel\TikTokUpload\Http\TikTokHttpClient;
+use KaiHempel\TikTokUpload\Media\PhotoItem;
+use KaiHempel\TikTokUpload\Media\PhotoSet;
 
 /**
  * Uploads a photo slideshow into the creator's inbox (post_mode MEDIA_UPLOAD).

@@ -2,16 +2,16 @@
 
 declare(strict_types=1);
 
-namespace Kuweh\TikTokUpload\Facades;
+namespace KaiHempel\TikTokUpload\Facades;
 
 use Illuminate\Support\Facades\Facade;
-use Kuweh\TikTokUpload\TikTokManager;
+use KaiHempel\TikTokUpload\TikTokManager;
 
 /**
- * @method static \Kuweh\TikTokUpload\TikTokAccountClient forAccount(string $accountId)
- * @method static \Kuweh\TikTokUpload\OAuth\OAuthService oauth()
- * @method static \Kuweh\TikTokUpload\Drivers\TikTokDriver driver()
- * @method static \Kuweh\TikTokUpload\Media\MediaValidator validator()
+ * @method static \KaiHempel\TikTokUpload\TikTokAccountClient forAccount(string $accountId)
+ * @method static \KaiHempel\TikTokUpload\OAuth\OAuthService oauth()
+ * @method static \KaiHempel\TikTokUpload\Drivers\TikTokDriver driver()
+ * @method static \KaiHempel\TikTokUpload\Media\MediaValidator validator()
  * @method static void resolveOwnerUsing(\Closure|null $resolver)
  *
  * @see TikTokManager

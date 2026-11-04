@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Kuweh\TikTokUpload\Console;
+namespace KaiHempel\TikTokUpload\Console;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Carbon;
-use Kuweh\TikTokUpload\Contracts\TokenRepository;
-use Kuweh\TikTokUpload\Exceptions\TikTokException;
-use Kuweh\TikTokUpload\OAuth\OAuthService;
+use KaiHempel\TikTokUpload\Contracts\TokenRepository;
+use KaiHempel\TikTokUpload\Exceptions\TikTokException;
+use KaiHempel\TikTokUpload\OAuth\OAuthService;
 
 /**
  * Keeps access tokens fresh even without upload activity. Recommended to run

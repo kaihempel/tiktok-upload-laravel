@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-use Kuweh\TikTokUpload\Data\PublishState;
-use Kuweh\TikTokUpload\Data\PublishStatus;
-use Kuweh\TikTokUpload\Data\StatusResult;
-use Kuweh\TikTokUpload\Exceptions\UnexpectedResponseException;
+use KaiHempel\TikTokUpload\Data\PublishState;
+use KaiHempel\TikTokUpload\Data\PublishStatus;
+use KaiHempel\TikTokUpload\Data\StatusResult;
+use KaiHempel\TikTokUpload\Exceptions\UnexpectedResponseException;
 
 it('maps TikTok status strings', function (string $raw, PublishStatus $status, bool $final, bool $successful, PublishState $state): void {
     $mapped = PublishStatus::fromTikTok($raw);

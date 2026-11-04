@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Kuweh\TikTokUpload\Media;
+namespace KaiHempel\TikTokUpload\Media;
 
-use Kuweh\TikTokUpload\Contracts\MediaProbe;
-use Kuweh\TikTokUpload\Exceptions\MediaValidationException;
-use Kuweh\TikTokUpload\Support\Utf16;
+use KaiHempel\TikTokUpload\Contracts\MediaProbe;
+use KaiHempel\TikTokUpload\Exceptions\MediaValidationException;
+use KaiHempel\TikTokUpload\Support\Utf16;
 use Throwable;
 
 /**
