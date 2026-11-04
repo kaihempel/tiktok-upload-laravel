@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Kuweh\TikTokUpload\Data;
+namespace KaiHempel\TikTokUpload\Data;
 
 use Carbon\CarbonImmutable;
-use Kuweh\TikTokUpload\OAuth\AccessToken;
+use KaiHempel\TikTokUpload\OAuth\AccessToken;
 
 final readonly class TikTokAccountData
 {

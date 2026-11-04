@@ -4,11 +4,11 @@ declare(strict_types=1);
 
 use Carbon\CarbonImmutable;
 use Illuminate\Foundation\Testing\RefreshDatabase;
-use Kuweh\TikTokUpload\Contracts\TokenRepository;
-use Kuweh\TikTokUpload\Data\TikTokAccountData;
-use Kuweh\TikTokUpload\OAuth\AccessToken;
-use Kuweh\TikTokUpload\Tests\Fixtures\User;
-use Kuweh\TikTokUpload\Tests\TestCase;
+use KaiHempel\TikTokUpload\Contracts\TokenRepository;
+use KaiHempel\TikTokUpload\Data\TikTokAccountData;
+use KaiHempel\TikTokUpload\OAuth\AccessToken;
+use KaiHempel\TikTokUpload\Tests\Fixtures\User;
+use KaiHempel\TikTokUpload\Tests\TestCase;
 
 pest()->extend(TestCase::class)->in('Unit', 'Feature');
 pest()->use(RefreshDatabase::class)->in('Feature');

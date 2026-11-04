@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Kuweh\TikTokUpload\Jobs\Middleware;
+namespace KaiHempel\TikTokUpload\Jobs\Middleware;
 
 use Closure;
 use Illuminate\Cache\RateLimiter;
 use Illuminate\Support\Facades\Config;
-use Kuweh\TikTokUpload\Contracts\HasTikTokAccount;
+use KaiHempel\TikTokUpload\Contracts\HasTikTokAccount;
 
 /**
  * Enforces TikTok's limit of 6 requests per minute and access token on the

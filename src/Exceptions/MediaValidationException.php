@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Kuweh\TikTokUpload\Exceptions;
+namespace KaiHempel\TikTokUpload\Exceptions;
 
 /**
  * Local validation of media failed. Contains every violation at once.

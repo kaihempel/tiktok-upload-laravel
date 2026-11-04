@@ -2,21 +2,21 @@
 
 declare(strict_types=1);
 
-namespace Kuweh\TikTokUpload\OAuth;
+namespace KaiHempel\TikTokUpload\OAuth;
 
 use Illuminate\Contracts\Events\Dispatcher;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Str;
-use Kuweh\TikTokUpload\Contracts\TokenRepository;
-use Kuweh\TikTokUpload\Data\TikTokAccountData;
-use Kuweh\TikTokUpload\Data\UserProfile;
-use Kuweh\TikTokUpload\Events\TikTokAccountConnected;
-use Kuweh\TikTokUpload\Events\TikTokAccountDisconnected;
-use Kuweh\TikTokUpload\Events\TikTokAccountReauthorizationRequired;
-use Kuweh\TikTokUpload\Events\TikTokTokenRefreshed;
-use Kuweh\TikTokUpload\Exceptions\AuthenticationException;
-use Kuweh\TikTokUpload\Exceptions\TikTokException;
-use Kuweh\TikTokUpload\Http\ApiTransport;
+use KaiHempel\TikTokUpload\Contracts\TokenRepository;
+use KaiHempel\TikTokUpload\Data\TikTokAccountData;
+use KaiHempel\TikTokUpload\Data\UserProfile;
+use KaiHempel\TikTokUpload\Events\TikTokAccountConnected;
+use KaiHempel\TikTokUpload\Events\TikTokAccountDisconnected;
+use KaiHempel\TikTokUpload\Events\TikTokAccountReauthorizationRequired;
+use KaiHempel\TikTokUpload\Events\TikTokTokenRefreshed;
+use KaiHempel\TikTokUpload\Exceptions\AuthenticationException;
+use KaiHempel\TikTokUpload\Exceptions\TikTokException;
+use KaiHempel\TikTokUpload\Http\ApiTransport;
 use Psr\Log\LoggerInterface;
 use Psr\Log\NullLogger;
 

@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Kuweh\TikTokUpload\Http\Controllers;
+namespace KaiHempel\TikTokUpload\Http\Controllers;
 
 use Illuminate\Contracts\Filesystem\Factory as FilesystemFactory;
 use Illuminate\Filesystem\FilesystemAdapter;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
-use Kuweh\TikTokUpload\Media\UrlProviders\SignedRouteUrlProvider;
+use KaiHempel\TikTokUpload\Media\UrlProviders\SignedRouteUrlProvider;
 use Symfony\Component\HttpFoundation\StreamedResponse;
 
 /**

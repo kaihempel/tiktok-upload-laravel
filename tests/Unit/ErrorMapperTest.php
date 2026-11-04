@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-use Kuweh\TikTokUpload\Exceptions\AuthenticationException;
-use Kuweh\TikTokUpload\Exceptions\DailyPostLimitReachedException;
-use Kuweh\TikTokUpload\Exceptions\ErrorMapper;
-use Kuweh\TikTokUpload\Exceptions\PendingShareLimitReachedException;
-use Kuweh\TikTokUpload\Exceptions\RateLimitException;
-use Kuweh\TikTokUpload\Exceptions\ScopeNotAuthorizedException;
-use Kuweh\TikTokUpload\Exceptions\ServerException;
-use Kuweh\TikTokUpload\Exceptions\TikTokException;
-use Kuweh\TikTokUpload\Exceptions\UrlOwnershipUnverifiedException;
+use KaiHempel\TikTokUpload\Exceptions\AuthenticationException;
+use KaiHempel\TikTokUpload\Exceptions\DailyPostLimitReachedException;
+use KaiHempel\TikTokUpload\Exceptions\ErrorMapper;
+use KaiHempel\TikTokUpload\Exceptions\PendingShareLimitReachedException;
+use KaiHempel\TikTokUpload\Exceptions\RateLimitException;
+use KaiHempel\TikTokUpload\Exceptions\ScopeNotAuthorizedException;
+use KaiHempel\TikTokUpload\Exceptions\ServerException;
+use KaiHempel\TikTokUpload\Exceptions\TikTokException;
+use KaiHempel\TikTokUpload\Exceptions\UrlOwnershipUnverifiedException;
 
 it('maps error codes to exceptions', function (string $code, ?int $status, string $class, bool $retryable): void {
     $exception = ErrorMapper::map($code, 'message', 'log-1', $status);

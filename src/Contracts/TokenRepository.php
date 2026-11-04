@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Kuweh\TikTokUpload\Contracts;
+namespace KaiHempel\TikTokUpload\Contracts;
 
 use DateTimeInterface;
 use Illuminate\Database\Eloquent\Model;
-use Kuweh\TikTokUpload\Data\TikTokAccountData;
-use Kuweh\TikTokUpload\Data\UserProfile;
-use Kuweh\TikTokUpload\OAuth\AccessToken;
+use KaiHempel\TikTokUpload\Data\TikTokAccountData;
+use KaiHempel\TikTokUpload\Data\UserProfile;
+use KaiHempel\TikTokUpload\OAuth\AccessToken;
 
 interface TokenRepository
 {

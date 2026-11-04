@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-use Kuweh\TikTokUpload\Support\PendingShareTracker;
+use KaiHempel\TikTokUpload\Support\PendingShareTracker;
 
 it('counts uploads in a sliding 24 hour window', function (): void {
     $tracker = new PendingShareTracker(cache()->store(), 2);

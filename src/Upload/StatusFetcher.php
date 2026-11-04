@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Kuweh\TikTokUpload\Upload;
+namespace KaiHempel\TikTokUpload\Upload;
 
-use Kuweh\TikTokUpload\Data\StatusResult;
-use Kuweh\TikTokUpload\Http\TikTokHttpClient;
+use KaiHempel\TikTokUpload\Data\StatusResult;
+use KaiHempel\TikTokUpload\Http\TikTokHttpClient;
 
 class StatusFetcher
 {

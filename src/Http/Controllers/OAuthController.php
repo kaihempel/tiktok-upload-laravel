@@ -2,16 +2,16 @@
 
 declare(strict_types=1);
 
-namespace Kuweh\TikTokUpload\Http\Controllers;
+namespace KaiHempel\TikTokUpload\Http\Controllers;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
-use Kuweh\TikTokUpload\Contracts\TokenRepository;
-use Kuweh\TikTokUpload\Exceptions\TikTokException;
-use Kuweh\TikTokUpload\OAuth\OAuthService;
-use Kuweh\TikTokUpload\TikTokManager;
+use KaiHempel\TikTokUpload\Contracts\TokenRepository;
+use KaiHempel\TikTokUpload\Exceptions\TikTokException;
+use KaiHempel\TikTokUpload\OAuth\OAuthService;
+use KaiHempel\TikTokUpload\TikTokManager;
 
 /**
  * Optional OAuth routes (connect, callback, disconnect).

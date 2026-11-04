@@ -71,7 +71,7 @@ Das Paket bringt optionale Routen mit (`routes.enabled`, Prefix `tiktok`, Middle
 Standardmäßig gehört ein Account dem eingeloggten User. Für Teams o. ä. lässt sich der Owner anpassen:
 
 ```php
-use Kuweh\TikTokUpload\Facades\TikTok;
+use KaiHempel\TikTokUpload\Facades\TikTok;
 
 TikTok::resolveOwnerUsing(fn (Request $request) => $request->user()->currentTeam);
 ```
@@ -87,10 +87,10 @@ TikTok::forAccount($account->id)->disconnect(deleteData: true);
 ## Uploads
 
 ```php
-use Kuweh\TikTokUpload\Facades\TikTok;
-use Kuweh\TikTokUpload\Jobs\UploadToTikTokInbox;
-use Kuweh\TikTokUpload\Media\PhotoSet;
-use Kuweh\TikTokUpload\Media\VideoFile;
+use KaiHempel\TikTokUpload\Facades\TikTok;
+use KaiHempel\TikTokUpload\Jobs\UploadToTikTokInbox;
+use KaiHempel\TikTokUpload\Media\PhotoSet;
+use KaiHempel\TikTokUpload\Media\VideoFile;
 
 // Video synchron (z. B. in einem eigenen Job)
 $result = TikTok::forAccount($accountId)->uploadVideo(
@@ -139,7 +139,7 @@ wird also nie komplett in den Speicher geladen.
 | `SignedRouteUrlProvider` (Standard) | Liefert Dateien über `/tiktok/media/{token}.{ext}` mit `URL::temporarySignedRoute` aus. Disk und Pfad sind verschlüsselt im Token, die TTL steht in `media_url.ttl_minutes`. URLs können nach `SEND_TO_USER_INBOX` sofort invalidiert werden (`media_url.invalidate_after_inbox`). |
 | `DiskUrlProvider` | Nutzt `Storage::temporaryUrl()`, z. B. für S3 hinter einer verifizierten CDN-Domain. |
 
-Eigene Provider implementieren `Kuweh\TikTokUpload\Contracts\MediaUrlProvider`.
+Eigene Provider implementieren `KaiHempel\TikTokUpload\Contracts\MediaUrlProvider`.
 
 ## Validierung
 
@@ -212,7 +212,7 @@ maskiert, Tokens tauchen nie im Log auf.
 ## Treiber für den Manager
 
 ```php
-use Kuweh\TikTokUpload\Data\PublishRequest;
+use KaiHempel\TikTokUpload\Data\PublishRequest;
 
 $driver = TikTok::driver();            // implementiert Contracts\PlatformDriver
 $driver->key();                        // 'tiktok'
@@ -230,7 +230,7 @@ Bei Fotos wird `caption` als `description` übernommen, der Titel kann über `op
 ## Eigener Token-Store
 
 `token_repository` in der Config kann auf eine eigene Implementierung von
-`Kuweh\TikTokUpload\Contracts\TokenRepository` zeigen, z. B. für Vault. Die Standardimplementierung speichert
+`KaiHempel\TikTokUpload\Contracts\TokenRepository` zeigen, z. B. für Vault. Die Standardimplementierung speichert
 in `tiktok_accounts` und verschlüsselt `access_token` und `refresh_token` mit dem `encrypted`-Cast.
 
 ## Entwicklung

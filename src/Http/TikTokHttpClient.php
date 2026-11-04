@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Kuweh\TikTokUpload\Http;
+namespace KaiHempel\TikTokUpload\Http;
 
-use Kuweh\TikTokUpload\Contracts\TokenRepository;
-use Kuweh\TikTokUpload\Data\TikTokAccountData;
-use Kuweh\TikTokUpload\Exceptions\AuthenticationException;
-use Kuweh\TikTokUpload\OAuth\OAuthService;
+use KaiHempel\TikTokUpload\Contracts\TokenRepository;
+use KaiHempel\TikTokUpload\Data\TikTokAccountData;
+use KaiHempel\TikTokUpload\Exceptions\AuthenticationException;
+use KaiHempel\TikTokUpload\OAuth\OAuthService;
 
 /**
  * Account aware API client. Before every request it makes sure the access

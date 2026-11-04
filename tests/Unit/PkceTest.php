@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-use Kuweh\TikTokUpload\OAuth\Pkce;
+use KaiHempel\TikTokUpload\OAuth\Pkce;
 
 it('generates a valid verifier', function (): void {
     $pkce = Pkce::generate();

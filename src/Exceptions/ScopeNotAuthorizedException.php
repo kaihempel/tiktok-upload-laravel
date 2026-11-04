@@ -2,6 +2,6 @@
 
 declare(strict_types=1);
 
-namespace Kuweh\TikTokUpload\Exceptions;
+namespace KaiHempel\TikTokUpload\Exceptions;
 
 class ScopeNotAuthorizedException extends TikTokException {}

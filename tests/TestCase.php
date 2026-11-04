@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Kuweh\TikTokUpload\Tests;
+namespace KaiHempel\TikTokUpload\Tests;
 
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
-use Kuweh\TikTokUpload\Facades\TikTok;
-use Kuweh\TikTokUpload\TikTokManager;
-use Kuweh\TikTokUpload\TikTokUploadServiceProvider;
+use KaiHempel\TikTokUpload\Facades\TikTok;
+use KaiHempel\TikTokUpload\TikTokManager;
+use KaiHempel\TikTokUpload\TikTokUploadServiceProvider;
 use Orchestra\Testbench\TestCase as Orchestra;
 
 abstract class TestCase extends Orchestra

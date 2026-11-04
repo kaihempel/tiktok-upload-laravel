@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Kuweh\TikTokUpload;
+namespace KaiHempel\TikTokUpload;
 
 use Closure;
 use Illuminate\Contracts\Container\Container;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\Request;
-use Kuweh\TikTokUpload\Drivers\TikTokDriver;
-use Kuweh\TikTokUpload\Media\MediaValidator;
-use Kuweh\TikTokUpload\OAuth\OAuthService;
+use KaiHempel\TikTokUpload\Drivers\TikTokDriver;
+use KaiHempel\TikTokUpload\Media\MediaValidator;
+use KaiHempel\TikTokUpload\OAuth\OAuthService;
 
 /**
  * Entry point of the package (facade root).

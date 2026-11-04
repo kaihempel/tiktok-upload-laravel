@@ -26,12 +26,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Kuweh\\TikTokUpload\\": "src/"
+            "KaiHempel\\TikTokUpload\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Kuweh\\TikTokUpload\\Tests\\": "tests/"
+            "KaiHempel\\TikTokUpload\\Tests\\": "tests/"
         }
     },
     "scripts": {
@@ -43,10 +43,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Kuweh\\TikTokUpload\\TikTokUploadServiceProvider"
+                "KaiHempel\\TikTokUpload\\TikTokUploadServiceProvider"
             ],
             "aliases": {
-                "TikTok": "Kuweh\\TikTokUpload\\Facades\\TikTok"
+                "TikTok": "KaiHempel\\TikTokUpload\\Facades\\TikTok"
             }
         }
     },

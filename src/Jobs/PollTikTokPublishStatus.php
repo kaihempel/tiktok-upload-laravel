@@ -2,26 +2,26 @@
 
 declare(strict_types=1);
 
-namespace Kuweh\TikTokUpload\Jobs;
+namespace KaiHempel\TikTokUpload\Jobs;
 
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Bus\Dispatchable;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Support\Facades\Config;
-use Kuweh\TikTokUpload\Contracts\HasTikTokAccount;
-use Kuweh\TikTokUpload\Contracts\MediaUrlProvider;
-use Kuweh\TikTokUpload\Contracts\RevocableMediaUrlProvider;
-use Kuweh\TikTokUpload\Data\PublishStatus;
-use Kuweh\TikTokUpload\Data\StatusResult;
-use Kuweh\TikTokUpload\Events\TikTokPostPublished;
-use Kuweh\TikTokUpload\Events\TikTokUploadFailed;
-use Kuweh\TikTokUpload\Events\TikTokUploadSentToInbox;
-use Kuweh\TikTokUpload\Events\TikTokUploadTimedOut;
-use Kuweh\TikTokUpload\Exceptions\RateLimitException;
-use Kuweh\TikTokUpload\Exceptions\TikTokException;
-use Kuweh\TikTokUpload\Jobs\Middleware\RateLimitedPerTikTokAccount;
-use Kuweh\TikTokUpload\TikTokManager;
+use KaiHempel\TikTokUpload\Contracts\HasTikTokAccount;
+use KaiHempel\TikTokUpload\Contracts\MediaUrlProvider;
+use KaiHempel\TikTokUpload\Contracts\RevocableMediaUrlProvider;
+use KaiHempel\TikTokUpload\Data\PublishStatus;
+use KaiHempel\TikTokUpload\Data\StatusResult;
+use KaiHempel\TikTokUpload\Events\TikTokPostPublished;
+use KaiHempel\TikTokUpload\Events\TikTokUploadFailed;
+use KaiHempel\TikTokUpload\Events\TikTokUploadSentToInbox;
+use KaiHempel\TikTokUpload\Events\TikTokUploadTimedOut;
+use KaiHempel\TikTokUpload\Exceptions\RateLimitException;
+use KaiHempel\TikTokUpload\Exceptions\TikTokException;
+use KaiHempel\TikTokUpload\Jobs\Middleware\RateLimitedPerTikTokAccount;
+use KaiHempel\TikTokUpload\TikTokManager;
 use Throwable;
 
 /**

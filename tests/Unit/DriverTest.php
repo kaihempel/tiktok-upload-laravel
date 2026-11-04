@@ -2,8 +2,8 @@
 
 declare(strict_types=1);
 
-use Kuweh\TikTokUpload\Data\MediaType;
-use Kuweh\TikTokUpload\Drivers\TikTokDriver;
+use KaiHempel\TikTokUpload\Data\MediaType;
+use KaiHempel\TikTokUpload\Drivers\TikTokDriver;
 
 it('describes its capabilities', function (): void {
     $driver = app(TikTokDriver::class);

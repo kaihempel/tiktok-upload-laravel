@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Kuweh\TikTokUpload\Tests\Fixtures;
+namespace KaiHempel\TikTokUpload\Tests\Fixtures;
 
 use Illuminate\Foundation\Auth\User as Authenticatable;
 

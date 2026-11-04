@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Kuweh\TikTokUpload\Data;
+namespace KaiHempel\TikTokUpload\Data;
 
 enum MediaType: string
 {

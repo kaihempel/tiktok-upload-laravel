@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Kuweh\TikTokUpload\Exceptions;
+namespace KaiHempel\TikTokUpload\Exceptions;
 
 /**
  * Maps TikTok error codes onto the package's exception hierarchy.

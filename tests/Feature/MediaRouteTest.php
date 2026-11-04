@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 use Illuminate\Routing\RouteCollection;
 use Illuminate\Support\Facades\Storage;
-use Kuweh\TikTokUpload\Contracts\MediaUrlProvider;
-use Kuweh\TikTokUpload\Media\UrlProviders\DiskUrlProvider;
-use Kuweh\TikTokUpload\Media\UrlProviders\SignedRouteUrlProvider;
+use KaiHempel\TikTokUpload\Contracts\MediaUrlProvider;
+use KaiHempel\TikTokUpload\Media\UrlProviders\DiskUrlProvider;
+use KaiHempel\TikTokUpload\Media\UrlProviders\SignedRouteUrlProvider;
 
 beforeEach(function (): void {
     Storage::fake('public');

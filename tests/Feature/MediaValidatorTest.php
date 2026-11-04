@@ -3,12 +3,12 @@
 declare(strict_types=1);
 
 use Illuminate\Support\Facades\Storage;
-use Kuweh\TikTokUpload\Contracts\MediaProbe;
-use Kuweh\TikTokUpload\Data\ProbeResult;
-use Kuweh\TikTokUpload\Exceptions\MediaValidationException;
-use Kuweh\TikTokUpload\Media\MediaValidator;
-use Kuweh\TikTokUpload\Media\PhotoSet;
-use Kuweh\TikTokUpload\Media\VideoFile;
+use KaiHempel\TikTokUpload\Contracts\MediaProbe;
+use KaiHempel\TikTokUpload\Data\ProbeResult;
+use KaiHempel\TikTokUpload\Exceptions\MediaValidationException;
+use KaiHempel\TikTokUpload\Media\MediaValidator;
+use KaiHempel\TikTokUpload\Media\PhotoSet;
+use KaiHempel\TikTokUpload\Media\VideoFile;
 
 beforeEach(fn () => Storage::fake('local'));
 

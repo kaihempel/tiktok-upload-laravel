@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Kuweh\TikTokUpload\Contracts;
+namespace KaiHempel\TikTokUpload\Contracts;
 
-use Kuweh\TikTokUpload\Data\ProbeResult;
+use KaiHempel\TikTokUpload\Data\ProbeResult;
 
 interface MediaProbe
 {

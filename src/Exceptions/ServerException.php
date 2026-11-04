@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Kuweh\TikTokUpload\Exceptions;
+namespace KaiHempel\TikTokUpload\Exceptions;
 
 /**
  * TikTok answered with a 5xx status code or an internal error.

@@ -2,18 +2,18 @@
 
 declare(strict_types=1);
 
-namespace Kuweh\TikTokUpload\Drivers;
+namespace KaiHempel\TikTokUpload\Drivers;
 
 use InvalidArgumentException;
-use Kuweh\TikTokUpload\Contracts\PlatformDriver;
-use Kuweh\TikTokUpload\Data\Capabilities;
-use Kuweh\TikTokUpload\Data\MediaType;
-use Kuweh\TikTokUpload\Data\PublishRequest;
-use Kuweh\TikTokUpload\Data\PublishResult;
-use Kuweh\TikTokUpload\Data\PublishState;
-use Kuweh\TikTokUpload\Data\PublishStatus;
-use Kuweh\TikTokUpload\Media\PhotoSet;
-use Kuweh\TikTokUpload\TikTokManager;
+use KaiHempel\TikTokUpload\Contracts\PlatformDriver;
+use KaiHempel\TikTokUpload\Data\Capabilities;
+use KaiHempel\TikTokUpload\Data\MediaType;
+use KaiHempel\TikTokUpload\Data\PublishRequest;
+use KaiHempel\TikTokUpload\Data\PublishResult;
+use KaiHempel\TikTokUpload\Data\PublishState;
+use KaiHempel\TikTokUpload\Data\PublishStatus;
+use KaiHempel\TikTokUpload\Media\PhotoSet;
+use KaiHempel\TikTokUpload\TikTokManager;
 
 /**
  * PlatformDriver implementation used by the social media manager.

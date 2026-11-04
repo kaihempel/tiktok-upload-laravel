@@ -3,8 +3,8 @@
 declare(strict_types=1);
 
 use Carbon\CarbonImmutable;
-use Kuweh\TikTokUpload\Exceptions\UnexpectedResponseException;
-use Kuweh\TikTokUpload\OAuth\AccessToken;
+use KaiHempel\TikTokUpload\Exceptions\UnexpectedResponseException;
+use KaiHempel\TikTokUpload\OAuth\AccessToken;
 
 it('builds a token from the token response', function (): void {
     $now = CarbonImmutable::parse('2026-11-01 12:00:00');
